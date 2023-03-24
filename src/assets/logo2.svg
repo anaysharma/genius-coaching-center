@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="154mm"
+   height="40mm"
+   viewBox="0 0 154 40"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="jl.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.72515427"
+     inkscape:cx="318.55291"
+     inkscape:cy="159.27645"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path950"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.68409;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 17.32054,0 12.124342,3.0000711 V 6.9999274 L 17.32054,4.0000352 31.091262,11.950521 34.555334,9.9505926 Z M 5.1961977,6.9999274 0,9.9999996 V 30.000001 L 17.32054,40 22.922738,36.765604 19.458666,34.765496 17.32054,35.999967 3.4640722,28.000073 V 11.999928 l 1.7321255,-0.999963 z m 12.2244093,1.1199034 -3.464072,2.0001072 17.220473,9.94236 v 7.937775 l -4.790019,2.765565 3.463894,1.99993 4.790199,-2.765567 V 22.062226 19.98371 18.062191 Z" />
+    <path
+       id="rect1733"
+       style="fill:#00aa88;fill-opacity:1;stroke:none;stroke-width:3.56033;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 10.392396,3.9456151 6.9281449,5.9457235 V 21.529127 25.4282 25.529164 L 24.686191,35.781751 28.150442,33.781823 10.392396,23.529236 Z" />
+    <text
+       xml:space="preserve"
+       style="font-size:14.1111px;line-height:1;font-family:'Lofi * Lifestyle';-inkscape-font-specification:'Lofi * Lifestyle';text-align:center;letter-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:0.992593;stroke-width:12;stroke-linecap:round"
+       x="41.107635"
+       y="16.153589"
+       id="text343"><tspan
+         sodipodi:role="line"
+         id="tspan341"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:14.1111px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani Semi-Bold';text-align:start;text-anchor:start;fill:#000000;fill-opacity:0.992593;stroke-width:12"
+         x="41.107635"
+         y="16.153589">Genius Logic</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:14.1111px;font-family:Rajdhani;-inkscape-font-specification:'Rajdhani Semi-Bold';text-align:start;text-anchor:start;fill:#000000;fill-opacity:0.992593;stroke-width:12"
+         x="41.107635"
+         y="31.466417"
+         id="tspan395">Computer Academy</tspan></text>
+  </g>
+</svg>
