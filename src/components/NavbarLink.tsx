@@ -14,7 +14,10 @@ const NavbarLink = (props: navbarLinkProps) => {
 				getCurrentRoute() == path && 'text-teal-600 md:shadow-accent'
 			}`}
 		>
-			<Link className="flex h-full items-center text-xl md:text-base" to={path}>
+			<Link
+				className="flex h-full items-center text-3xl md:text-base"
+				to={path}
+			>
 				{name}
 			</Link>
 		</li>

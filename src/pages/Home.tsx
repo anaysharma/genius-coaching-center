@@ -1,7 +1,7 @@
-import React from 'react';
-
 const Home = () => {
-	return <div className="h-screen">Home</div>;
+	return (
+		<div className="grid h-screen place-items-center text-4xl">Home Page</div>
+	);
 };
 
 export default Home;

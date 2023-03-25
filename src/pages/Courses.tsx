@@ -1,5 +1,9 @@
 const Courses = () => {
-	return <div>Courses</div>;
+	return (
+		<div className="grid h-screen place-items-center text-4xl">
+			Courses Page
+		</div>
+	);
 };
 
 export default Courses;
