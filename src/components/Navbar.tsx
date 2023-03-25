@@ -11,7 +11,7 @@ const Navbar = () => {
 				<div className="mx-auto flex h-full w-full justify-between lg:w-content">
 					<div className="flex h-full w-full justify-between md:w-fit">
 						<Link to="/" className="flex h-full w-full items-center gap-2 py-2">
-							<img className="h-full" src="/assets/logo.svg" alt="" />
+							<img className="h-full" src="/logo.svg" alt="" />
 							<h3 className="text-md flex-1 justify-center text-center leading-none md:text-left">
 								Genius Logic <br /> Computer Academy
 							</h3>
@@ -24,6 +24,7 @@ const Navbar = () => {
 						className={`fixed top-0 flex h-screen w-screen flex-col justify-center bg-white transition-[right] duration-300 md:static md:h-full md:w-fit ${
 							isOpen ? 'right-0' : '-right-[100vw]'
 						}`}
+						onClick={() => setOpen(false)}
 					>
 						<ul className="flex h-1/2 w-full flex-col items-center gap-4 md:h-full md:flex-row md:p-0">
 							<NavbarLink path="" name="Home" />
