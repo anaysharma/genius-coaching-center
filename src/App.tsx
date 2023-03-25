@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ReactElement } from 'react';
 
 import Navbar from './components/Navbar';
 
@@ -8,7 +9,7 @@ import Courses from './pages/Courses';
 import Services from './pages/Services';
 import Gallery from './pages/Gallery';
 
-function App() {
+function App(): ReactElement {
 	return (
 		<BrowserRouter>
 			<Routes>
