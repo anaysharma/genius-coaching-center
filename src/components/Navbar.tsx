@@ -12,8 +12,11 @@ const Navbar = () => {
 					<div className="flex h-full w-full justify-between md:w-fit">
 						<Link to="/" className="flex h-full w-full items-center gap-2 py-2">
 							<img className="h-full" src="/logo.svg" alt="" />
-							<h3 className="text-md flex-1 justify-center text-center leading-none md:text-left">
-								Genius Logic <br /> Computer Academy
+							<h3 className="flex-1 justify-center text-center text-sm leading-none md:text-left">
+								<span className="text-xl font-semibold leading-none">
+									Genius
+								</span>
+								<br /> Computer Academy
 							</h3>
 						</Link>
 						<div className="z-10 md:hidden">
