@@ -1,3 +1,5 @@
+import getDarkModePreference from '../utils/getDarkModePreference';
+
 const Footer = () => {
 	return (
 		<footer className="bg-white font-rajdhani dark:bg-gray-900">
@@ -6,13 +8,17 @@ const Footer = () => {
 					<div className="mb-6 md:mb-0">
 						<a href="/" className="flex items-center">
 							<img
-								src="/logo.svg"
+								src={
+									getDarkModePreference() == 'dark'
+										? '/logo-dark.svg'
+										: '/logo.svg'
+								}
 								className="mr-2 h-8"
 								alt="genius coaching center Logo"
 							/>
 							<span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
 								<h3 className="flex-1 justify-center text-xs font-medium leading-none">
-									<span className="text-lg font-semibold leading-none">
+									<span className="text-base font-semibold leading-none">
 										Genius
 									</span>
 									<br /> Computer Academy
@@ -29,7 +35,7 @@ const Footer = () => {
 								<li className="mb-4">
 									<a
 										href="/courses"
-										className="hover:text-teal-600 hover:underline"
+										className="hover:text-teal-600 hover:underline hover:dark:text-teal-400"
 									>
 										Courses
 									</a>
@@ -37,7 +43,7 @@ const Footer = () => {
 								<li>
 									<a
 										href="/services"
-										className="hover:text-teal-600 hover:underline"
+										className="hover:text-teal-600 hover:underline hover:dark:text-teal-400"
 									>
 										Services
 									</a>
@@ -52,7 +58,7 @@ const Footer = () => {
 								<li className="mb-4">
 									<a
 										href="twitter.link"
-										className="hover:text-teal-600 hover:underline "
+										className="hover:text-teal-600 hover:underline hover:dark:text-teal-400 "
 									>
 										Twitter
 									</a>
@@ -60,7 +66,7 @@ const Footer = () => {
 								<li>
 									<a
 										href="instagram.link"
-										className="hover:text-teal-600 hover:underline"
+										className="hover:text-teal-600 hover:underline hover:dark:text-teal-400"
 									>
 										Instagram
 									</a>
@@ -73,12 +79,18 @@ const Footer = () => {
 							</h2>
 							<ul className="font-medium text-gray-600 dark:text-gray-400">
 								<li className="mb-4">
-									<a href="#" className="hover:text-teal-600 hover:underline">
+									<a
+										href="#"
+										className="hover:text-teal-600 hover:underline hover:dark:text-teal-400"
+									>
 										Privacy Policy
 									</a>
 								</li>
 								<li>
-									<a href="#" className="hover:text-teal-600 hover:underline">
+									<a
+										href="#"
+										className="hover:text-teal-600 hover:underline hover:dark:text-teal-400"
+									>
 										Terms &amp; Conditions
 									</a>
 								</li>
