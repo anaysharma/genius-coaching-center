@@ -25,7 +25,7 @@ function Carousel() {
 							onMouseEnter={() => setPaused(true)}
 							onMouseLeave={() => setPaused(false)}
 							src={slide.image}
-							alt="This is a carousel slide"
+							alt={`image of slide number ${index} of hero carousal`}
 							key={index}
 							className={
 								index === currentSlide

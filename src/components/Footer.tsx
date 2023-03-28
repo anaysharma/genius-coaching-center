@@ -98,7 +98,7 @@ const Footer = () => {
 						</div>
 						<a
 							href="#home"
-							className="mt-auto flex w-36 hover:underline sm:absolute sm:top-0 sm:right-10 md:left-0 md:bottom-0 md:top-auto"
+							className="mt-auto flex w-24 hover:underline sm:absolute sm:right-20 sm:top-0 sm:mr-1 md:left-0 md:bottom-0 md:top-auto"
 						>
 							go to top
 						</a>
