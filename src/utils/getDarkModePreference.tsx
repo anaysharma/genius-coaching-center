@@ -7,9 +7,8 @@ const getDarkModePreference = (): string => {
 			window.matchMedia('(prefers-color-scheme: dark)').matches
 		) {
 			return 'dark';
-		} else {
-			return 'light';
 		}
+		return 'light';
 	};
 
 	const [mode, setMode] = useState(getCurrentBrowserColor());

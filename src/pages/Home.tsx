@@ -1,6 +1,11 @@
+import Carousal from '../components/homepageCarousal';
+
 const Home = () => {
 	return (
-		<div className="grid h-screen place-items-center text-4xl">Home Page</div>
+		<div className="relative h-screen">
+			<Carousal />
+			<h1 id="home"></h1>
+		</div>
 	);
 };
 

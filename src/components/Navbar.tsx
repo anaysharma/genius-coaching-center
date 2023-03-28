@@ -8,7 +8,7 @@ const Navbar = () => {
 	const [isOpen, setOpen] = useState(false);
 	return (
 		<>
-			<nav className="fixed h-16 w-full border-b bg-white/75 pl-4 font-rajdhani font-medium backdrop-blur dark:border-b-gray-700 dark:bg-gray-900/75 dark:text-white/80 md:h-14 lg:px-0">
+			<nav className="fixed z-10 h-16 w-full border-b bg-white/80 pl-4 font-rajdhani font-medium backdrop-blur-lg dark:border-b-gray-700 dark:bg-gray-900/80 dark:text-white/80 md:h-14 lg:px-0">
 				<div className="container mx-auto flex h-full w-full justify-between md:px-6">
 					<div className="flex h-full w-full justify-between md:w-fit">
 						<Link to="/" className="flex h-full w-full items-center gap-2 py-2">
@@ -38,7 +38,7 @@ const Navbar = () => {
 						}`}
 					>
 						<ul
-							className="flex h-1/2 w-full flex-col items-center gap-4 md:h-full md:flex-row md:p-0"
+							className="flex h-1/2 w-full flex-col items-center md:h-full md:flex-row md:gap-4 md:p-0"
 							onClick={() => setOpen(false)}
 						>
 							<NavbarLink path="" name="Home" />
@@ -52,7 +52,7 @@ const Navbar = () => {
 			</nav>
 
 			<main className="dark:bg-gray-900 dark:text-white">
-				<div className="container mx-auto px-4 pt-16 md:px-6 md:pt-14">
+				<div className="container mx-auto pt-16 md:pt-14">
 					<Outlet />
 				</div>
 			</main>

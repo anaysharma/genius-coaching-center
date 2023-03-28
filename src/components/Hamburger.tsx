@@ -17,17 +17,17 @@ const Hamburger = (props: hamburgerProps) => {
 		>
 			<div className="relative mx-auto h-4 w-5">
 				<div
-					className={`absolute top-px h-[2px] w-5 origin-bottom-left bg-slate-600 duration-200 dark:bg-slate-200 ${
+					className={`absolute top-px h-[2px] w-5 origin-bottom-left bg-slate-800 duration-200 dark:bg-slate-200 ${
 						toggled ? 'rotate-45' : 'top-px rotate-0'
 					}`}
 				></div>
 				<div
-					className={`absolute top-1/2 h-[2px] w-5 bg-slate-600 duration-200 dark:bg-slate-200 ${
+					className={`absolute top-1/2 h-[2px] w-5 bg-slate-800 duration-200 dark:bg-slate-200 ${
 						toggled ? 'opacity-0' : 'opacity-100'
 					}`}
 				></div>
 				<div
-					className={`absolute top-full h-[2px] w-5 origin-top-left bg-slate-600 duration-200 dark:bg-slate-200 ${
+					className={`absolute top-full h-[2px] w-5 origin-top-left bg-slate-800 duration-200 dark:bg-slate-200 ${
 						toggled ? '-rotate-45' : 'rotate-0'
 					}`}
 				></div>
