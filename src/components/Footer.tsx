@@ -97,7 +97,7 @@ const Footer = () => {
 							</ul>
 						</div>
 						<a
-							href="#home"
+							href="#top-link"
 							className="mt-auto flex w-24 hover:underline sm:absolute sm:right-20 sm:top-0 sm:mr-1 md:left-0 md:bottom-0 md:top-auto"
 						>
 							go to top

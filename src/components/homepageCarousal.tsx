@@ -18,8 +18,8 @@ function Carousel() {
 	}, [paused]);
 
 	return (
-		<div className="relative overflow-hidden">
-			<div className="flex h-96 w-full items-center justify-center">
+		<div className="relative w-screen overflow-hidden">
+			<div className="flex h-[50vh] w-full items-center justify-center sm:h-[600px]">
 				{CarouselData.map((slide, index) => {
 					return (
 						<img
@@ -29,7 +29,7 @@ function Carousel() {
 							alt={`image of slide number ${index} of hero carousal`}
 							key={index}
 							className={`
-								absolute min-h-full min-w-full flex-shrink-0 object-fill transition-opacity duration-1000 ${
+								absolute min-h-full min-w-full flex-shrink-0 object-cover transition-opacity duration-1000 ${
 									index === currentSlide ? 'opacity-100' : 'opacity-0'
 								}`}
 						/>

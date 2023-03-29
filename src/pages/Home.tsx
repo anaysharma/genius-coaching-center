@@ -2,9 +2,11 @@ import Carousal from '../components/homepageCarousal';
 
 const Home = () => {
 	return (
-		<div className="h-screen">
+		<div>
 			<Carousal />
-			<h1 id="home"></h1>
+			<div className="container h-screen" id="home-page-content">
+				<h1 id="home"></h1>
+			</div>
 		</div>
 	);
 };

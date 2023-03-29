@@ -86,9 +86,8 @@ const Navbar = () => {
 			</nav>
 
 			<main className="dark:bg-gray-900 dark:text-white">
-				<div className="container mx-auto">
-					<Outlet />
-				</div>
+				<span id="top-link"></span>
+				<Outlet />
 			</main>
 		</>
 	);
