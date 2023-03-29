@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-const getDarkModePreference = (): string => {
-	const getCurrentBrowserColor = () => {
+const getDarkModePreference = (): 'dark' | 'light' => {
+	const getCurrentBrowserColor = (): 'dark' | 'light' => {
 		if (
 			window.matchMedia &&
 			window.matchMedia('(prefers-color-scheme: dark)').matches

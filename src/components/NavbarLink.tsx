@@ -10,7 +10,7 @@ const NavbarLink = (props: navbarLinkProps) => {
 	const { name, path } = props;
 	return (
 		<li
-			className={`-mt-px flex h-full w-screen justify-center border-y hover:text-teal-600 hover:dark:text-teal-400 md:mt-0 md:w-16 md:border-0 ${
+			className={`-mt-px flex h-full w-screen justify-center border-y hover:text-teal-600 dark:border-gray-700 hover:dark:text-teal-400 md:mt-0 md:w-16 md:border-0 ${
 				getCurrentRoute() == path &&
 				'text-teal-600 dark:text-teal-400 md:shadow-accent'
 			}`}

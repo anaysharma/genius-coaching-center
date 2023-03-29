@@ -1,14 +1,48 @@
 import { Outlet, Link } from 'react-router-dom';
 import NavbarLink from './NavbarLink';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Hamburger from './Hamburger';
 import getDarkModePreference from '../utils/getDarkModePreference';
+import getScrollPosition from '../utils/getScrollPosition';
 
 const Navbar = () => {
-	const [isOpen, setOpen] = useState(false);
+	const [isOpen, setOpen] = useState<boolean>(false);
+	const [backgroundColor, setBackgroundColor] = useState<{
+		[key: string]: string;
+	}>({
+		dark: 'rgba(15, 23, 42, 0)',
+		light: 'rgba(255, 255, 255, 0)',
+	});
+
+	const handleScroll = () => {
+		const position = window.pageYOffset;
+
+		setBackgroundColor({
+			dark: `rgba(15, 23, 42, ${position / 255 > 0.8 ? 0.8 : position / 255})`,
+			light: `rgba(255, 255, 255, ${
+				position / 255 > 0.8 ? 0.8 : position / 255
+			})`,
+		});
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll, { passive: true });
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, [backgroundColor]);
+
+	const getBackgroundColor = () => backgroundColor[getDarkModePreference()];
+
 	return (
 		<>
-			<nav className="fixed z-10 h-16 w-full border-b bg-white/80 pl-4 font-rajdhani font-medium backdrop-blur-lg dark:border-b-gray-700 dark:bg-gray-900/80 dark:text-white/80 md:h-14 lg:px-0">
+			<nav
+				id="nav-bar"
+				className={`fixed z-10 h-16 w-full pl-4 font-rajdhani font-medium dark:border-b-gray-700 dark:text-white/80 md:h-14 lg:px-0 ${
+					getScrollPosition() ? 'border-b backdrop-blur-lg' : ''
+				}`}
+				style={{ backgroundColor: getBackgroundColor() }}
+			>
 				<div className="container mx-auto flex h-full w-full justify-between md:px-6">
 					<div className="flex h-full w-full justify-between md:w-fit">
 						<Link to="/" className="flex h-full w-full items-center gap-2 py-2">
@@ -52,7 +86,7 @@ const Navbar = () => {
 			</nav>
 
 			<main className="dark:bg-gray-900 dark:text-white">
-				<div className="container mx-auto pt-16 md:pt-14">
+				<div className="container mx-auto">
 					<Outlet />
 				</div>
 			</main>
