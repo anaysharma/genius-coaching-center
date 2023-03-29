@@ -1,17 +1,22 @@
 export const CarouselData = [
 	{
-		image: 'https://images.pexels.com/photos/255419/pexels-photo-255419.jpeg',
+		image:
+			'https://media.istockphoto.com/id/1003228586/photo/office-room-of-many-desktop-computers.jpg?s=612x612&w=0&k=20&c=8RYTug1FH6Oqa3gUciiU838muAaxvvLvPMvYiZ7FsAo=',
 	},
 	{
-		image: 'https://images.pexels.com/photos/259526/pexels-photo-259526.jpeg',
+		image:
+			'https://previews.123rf.com/images/wavebreakmediamicro/wavebreakmediamicro1503/wavebreakmediamicro150305448/38078034-cute-pupils-in-computer-class-with-teacher-at-the-elementary-school.jpg',
 	},
 	{
-		image: 'https://images.pexels.com/photos/3030268/pexels-photo-3030268.jpeg',
+		image:
+			'https://media.istockphoto.com/id/1224309929/photo/digital-native-students-e-learning-over-computers-at-school.jpg?s=612x612&w=0&k=20&c=RntH1W-n6oGXeyGqbufTi8Wx6cqtOuaw_Nu60lUOIBw=',
 	},
 	{
-		image: 'https://images.pexels.com/photos/866398/pexels-photo-866398.jpeg',
+		image:
+			'https://media.istockphoto.com/id/1278979697/photo/group-of-high-school-students-using-laptop-in-classroom.jpg?s=612x612&w=0&k=20&c=hWLPu8JxsFtEI8Yo4jBQGBAALFL9zh6Hdj_50GprO5s=',
 	},
 	{
-		image: 'https://images.pexels.com/photos/235359/pexels-photo-235359.jpeg',
+		image:
+			'https://images.unsplash.com/photo-1556636530-6b7482d80e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tcHV0ZXIlMjBjbGFzc3xlbnwwfHwwfHw%3D&w=1000&q=80',
 	},
 ];
