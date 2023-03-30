@@ -39,8 +39,10 @@ const Navbar = () => {
 		<>
 			<nav
 				id="nav-bar"
-				className={`fixed z-10 h-16 w-full pl-4 font-rajdhani font-medium dark:border-b-gray-700 dark:text-white/80 md:h-14 lg:px-0 ${
-					scrollPosition ? 'border-b backdrop-blur-lg' : ''
+				className={`fixed z-10 h-16 w-full pl-4 font-rajdhani font-medium transition-shadow duration-500 dark:text-white/80 md:h-14 lg:px-0 ${
+					scrollPosition
+						? 'shadow-md backdrop-blur-xl'
+						: 'border-b-transparent shadow-none'
 				}`}
 				style={{ backgroundColor: getBackgroundColor() }}
 			>
