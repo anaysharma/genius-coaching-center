@@ -3,7 +3,7 @@ type hamburgerProps = {
 	toggle: Function;
 };
 
-const Hamburger = (props: hamburgerProps) => {
+function Hamburger(props: hamburgerProps) {
 	const { toggled, toggle } = props;
 
 	return (
@@ -34,6 +34,6 @@ const Hamburger = (props: hamburgerProps) => {
 			</div>
 		</button>
 	);
-};
+}
 
 export default Hamburger;

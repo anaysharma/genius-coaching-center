@@ -1,12 +1,7 @@
 import getCurrentRoute from '../utils/getCurrentRoute';
 import { Link } from 'react-router-dom';
 
-type navbarLinkProps = {
-	name: string;
-	path: string;
-};
-
-const NavbarLink = (props: navbarLinkProps) => {
+function NavbarLink(props: { name: string; path: string }) {
 	const { name, path } = props;
 	return (
 		<li
@@ -23,6 +18,6 @@ const NavbarLink = (props: navbarLinkProps) => {
 			</Link>
 		</li>
 	);
-};
+}
 
 export default NavbarLink;

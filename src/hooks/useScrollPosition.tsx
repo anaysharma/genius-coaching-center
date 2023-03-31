@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 
-const useScrollPosition = (): [number, Dispatch<SetStateAction<number>>] => {
+function useScrollPosition(): [number, Dispatch<SetStateAction<number>>] {
 	const [scrollPosition, setScrollPosition] = useState<number>(0);
 	const handleScroll = () => {
 		const position = window.pageYOffset;
@@ -15,6 +15,6 @@ const useScrollPosition = (): [number, Dispatch<SetStateAction<number>>] => {
 	}, []);
 
 	return [scrollPosition, setScrollPosition];
-};
+}
 
 export default useScrollPosition;

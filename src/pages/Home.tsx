@@ -1,14 +1,18 @@
+import Glance from '../components/Glance';
 import Carousal from '../components/homepageCarousal';
 
-const Home = () => {
+function Home() {
 	return (
 		<div>
 			<Carousal />
-			<div className="container mx-auto h-screen" id="home-page-content">
-				<h1 id="home"></h1>
+			<div
+				className="container mx-auto h-screen md:px-6"
+				id="home-page-content"
+			>
+				<Glance />
 			</div>
 		</div>
 	);
-};
+}
 
 export default Home;

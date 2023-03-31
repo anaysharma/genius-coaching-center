@@ -5,11 +5,12 @@ import Hamburger from './Hamburger';
 import getDarkModePreference from '../utils/getDarkModePreference';
 import useScrollPosition from '../hooks/useScrollPosition';
 
-const Navbar = () => {
+function Navbar() {
 	const [isOpen, setOpen] = useState<boolean>(false);
 	const [scrollPosition, _] = useScrollPosition();
 	const [backgroundColor, setBackgroundColor] = useState<{
-		[key: string]: string;
+		dark: string;
+		light: string;
 	}>({
 		dark: 'rgba(15, 23, 42, 0)',
 		light: 'rgba(255, 255, 255, 0)',
@@ -19,9 +20,9 @@ const Navbar = () => {
 		const position = window.pageYOffset;
 
 		setBackgroundColor({
-			dark: `rgba(15, 23, 42, ${position / 400 > 0.9 ? 0.9 : position / 400})`,
+			dark: `rgba(15, 23, 42, ${position / 300 > 0.9 ? 0.9 : position / 300})`,
 			light: `rgba(255, 255, 255, ${
-				position / 400 > 0.9 ? 0.9 : position / 400
+				position / 300 > 0.9 ? 0.9 : position / 300
 			})`,
 		});
 	};
@@ -41,7 +42,7 @@ const Navbar = () => {
 				id="nav-bar"
 				className={`fixed z-10 h-16 w-full pl-4 font-rajdhani font-medium transition-shadow duration-500 dark:text-white/80 md:h-14 lg:px-0 ${
 					scrollPosition
-						? 'shadow-md backdrop-blur-xl'
+						? 'shadow-md backdrop-blur-lg'
 						: 'border-b-transparent shadow-none'
 				}`}
 				style={{ backgroundColor: getBackgroundColor() }}
@@ -94,6 +95,6 @@ const Navbar = () => {
 			</main>
 		</>
 	);
-};
+}
 
 export default Navbar;

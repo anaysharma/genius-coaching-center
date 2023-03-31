@@ -1,6 +1,6 @@
 import getDarkModePreference from '../utils/getDarkModePreference';
 
-const Footer = () => {
+function Footer() {
 	return (
 		<footer className="w-full bg-white font-rajdhani dark:bg-gray-900">
 			<div className="container mx-auto w-full p-4 sm:p-6">
@@ -169,6 +169,6 @@ const Footer = () => {
 			</div>
 		</footer>
 	);
-};
+}
 
 export default Footer;

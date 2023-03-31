@@ -4,27 +4,24 @@ import { Link } from 'react-router-dom';
 
 function Carousel() {
 	const [currentSlide, setCurrentSLide] = useState<number>(0);
-	const [paused, setPaused] = useState<boolean>(false);
 
 	useEffect(() => {
 		const timerId = setInterval(
 			() =>
-				setCurrentSLide((currentSlide) =>
-					paused ? currentSlide : (currentSlide + 1) % CarouselData.length
+				setCurrentSLide(
+					(currentSlide) => (currentSlide + 1) % CarouselData.length
 				),
 			4000
 		);
 		return () => clearInterval(timerId);
-	}, [paused]);
+	}, []);
 
 	return (
 		<div className="relative w-full overflow-hidden">
-			<div className="flex h-[50vh] min-h-[600px] w-full items-center justify-center">
+			<div className="flex h-[70vh] w-full items-center justify-center">
 				{CarouselData.map((slide, index) => {
 					return (
 						<img
-							onMouseEnter={() => setPaused(true)}
-							onMouseLeave={() => setPaused(false)}
 							src={slide.image}
 							alt={`image of slide number ${index} of hero carousal`}
 							key={index}
@@ -40,12 +37,12 @@ function Carousel() {
 						'z-2 absolute inset-0 bg-gradient-to-b from-white dark:from-slate-900'
 					}
 				></div>
-				<section className="absolute inset-0 flex items-center">
-					<div className="container mx-auto py-16 px-4 text-center lg:py-16 lg:px-12">
-						<h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white lg:text-5xl">
+				<section className="absolute inset-0 mt-auto flex items-center sm:mt-0">
+					<div className="container mx-auto mt-auto py-16 px-4 text-center sm:mt-0 lg:py-16 lg:px-12">
+						<h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
 							Building A Better World, One Student At A Time.
 						</h1>
-						<p className="mb-8 text-lg font-normal text-black/75 dark:text-gray-300 sm:px-16 lg:text-xl xl:px-48">
+						<p className="mb-8 font-normal text-black/75 dark:text-gray-300 sm:px-16 md:text-lg lg:text-xl xl:px-48">
 							Here at Genius Computer Academy we focus on education that unlock
 							students to grow by falling in love with technology and
 							innovation. we love to teach, to see you grow!
