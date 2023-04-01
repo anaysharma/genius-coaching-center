@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 
 function Glance() {
 	return (
-		<div className="overflow-hiddenbg-white relative z-[5] -mt-12 flex flex-col items-center justify-between dark:border-slate-700 dark:bg-slate-800 sm:rounded sm:border sm:shadow-xl lg:h-96 xl:mx-14">
+		<div className="overflow-hiddenbg-white relative z-[5] -mt-12 flex flex-col items-center justify-between bg-white dark:border-slate-700 dark:bg-slate-800 sm:rounded sm:border sm:shadow-xl lg:h-96 xl:mx-14">
 			<div className="flex w-full px-4 pt-8 sm:items-center md:h-24 md:bg-slate-200 md:py-0 md:px-0 md:pt-0 md:dark:bg-slate-700">
 				<ul className="justify-left grid w-full gap-4 px-4 md:grid-flow-col md:gap-0 md:px-0">
-					<li className="flex gap-4 md:justify-center md:border-r">
+					<li className="flex gap-4 border-gray-500 dark:border-slate-400 md:justify-center md:border-r">
 						<img src="/icons/email.svg" className="dark:invert" alt="" />
 						<a
 							className="opacity-80 hover:underline"
@@ -14,7 +14,7 @@ function Glance() {
 							example@email.com
 						</a>
 					</li>
-					<li className="flex gap-4 md:justify-center md:border-r">
+					<li className="flex gap-4 border-gray-500 dark:border-slate-400 md:justify-center md:border-r">
 						<img src="/icons/smartphone.svg" className="dark:invert" alt="" />
 						<a
 							className="opacity-80 hover:underline"

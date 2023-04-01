@@ -5,10 +5,7 @@ function Home() {
 	return (
 		<div>
 			<Carousal />
-			<div
-				className="container mx-auto h-screen md:px-6"
-				id="home-page-content"
-			>
+			<div className="container mx-auto md:px-6" id="home-page-content">
 				<Glance />
 			</div>
 		</div>

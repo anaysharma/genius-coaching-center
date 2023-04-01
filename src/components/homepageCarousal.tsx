@@ -39,10 +39,10 @@ function Carousel() {
 				></div>
 				<section className="absolute inset-0 mt-auto flex items-center sm:mt-0">
 					<div className="container mx-auto mt-auto py-16 px-4 text-center sm:mt-0 lg:py-16 lg:px-12">
-						<h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
+						<h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl xl:text-6xl">
 							Building A Better World, One Student At A Time.
 						</h1>
-						<p className="mb-8 font-normal text-black/75 dark:text-gray-300 sm:px-16 md:text-lg lg:text-xl xl:px-48">
+						<p className="mb-8 text-lg font-normal text-black/75 dark:text-gray-300 sm:px-16 lg:text-xl xl:px-48">
 							Here at Genius Computer Academy we focus on education that unlock
 							students to grow by falling in love with technology and
 							innovation. we love to teach, to see you grow!
