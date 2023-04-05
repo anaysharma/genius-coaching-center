@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { CarouselData } from './carousalData';
+import { CarouselData } from '../data/carousalData';
 import { Link } from 'react-router-dom';
 
 function Carousel() {
@@ -50,7 +50,7 @@ function Carousel() {
 						<div className="mb-8 flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 lg:mb-16">
 							<Link
 								to="/about"
-								className="dark:focus:ring-primary-900 inline-flex items-center justify-center rounded bg-teal-600 py-3 px-5 text-center text-base font-medium text-white hover:bg-teal-700 focus:ring-4 focus:ring-teal-300 sm:w-44"
+								className="dark:focus:ring-primary-900 inline-flex items-center justify-center rounded bg-teal-600 py-3 px-5 text-center text-base font-medium text-white transition-all hover:translate-y-[-4px]  hover:shadow-tealButtonHover focus:ring-4 focus:ring-teal-300 sm:w-44"
 							>
 								Learn more
 								<svg
@@ -68,7 +68,7 @@ function Carousel() {
 							</Link>
 							<Link
 								to="/courses"
-								className="inline-flex items-center justify-center rounded bg-white py-3 px-5 text-center text-base font-medium text-gray-900 hover:bg-slate-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:bg-slate-700 dark:text-white dark:hover:bg-gray-800 dark:focus:ring-gray-800 sm:w-44"
+								className="inline-flex items-center justify-center rounded bg-white py-3 px-5 text-center text-base font-medium text-gray-900 transition-all hover:translate-y-[-4px] hover:shadow-slateButtonHoverLight focus:ring-4 focus:ring-gray-100 dark:bg-slate-700 dark:text-white dark:hover:shadow-slateButtonHoverDark dark:focus:ring-gray-800 sm:w-44 "
 							>
 								Get Started
 							</Link>

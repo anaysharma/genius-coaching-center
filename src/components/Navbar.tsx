@@ -1,6 +1,6 @@
 import { Outlet, Link } from 'react-router-dom';
 import NavbarLink from './NavbarLink';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Hamburger from './Hamburger';
 import getDarkModePreference from '../utils/getDarkModePreference';
 import useScrollPosition from '../hooks/useScrollPosition';
@@ -13,10 +13,10 @@ function Navbar() {
 		<>
 			<nav
 				id="nav-bar"
-				className={`fixed z-10 h-16 w-full pl-4 font-rajdhani font-medium transition-all duration-700 dark:text-white/80 md:h-14 lg:px-0 ${
+				className={`fixed z-10 h-16 w-full pl-4 font-rajdhani font-medium transition-colors transition-shadow duration-700 dark:text-white/80 md:h-14 lg:px-0 ${
 					scrollPosition
 						? 'bg-white/90 shadow-md backdrop-blur dark:bg-slate-900/90'
-						: 'bg-transparent shadow-none'
+						: 'bg-transparent shadow-none backdrop-blur-none'
 				}`}
 			>
 				<div className="container mx-auto flex h-full w-full justify-between md:px-6">
