@@ -8,7 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Courses from './pages/Courses';
 import Services from './pages/Services';
-import Gallery from './pages/Gallery';
+import Reviews from './pages/Reviews';
 
 function App(): ReactElement {
 	return (
@@ -20,7 +20,7 @@ function App(): ReactElement {
 						<Route path="about" element={<About />} />
 						<Route path="courses" element={<Courses />} />
 						<Route path="services" element={<Services />} />
-						<Route path="gallery" element={<Gallery />} />
+						<Route path="reviews" element={<Reviews />} />
 						<Route path="*" element={<h1> NO PAGE </h1>} />
 					</Route>
 				</Routes>

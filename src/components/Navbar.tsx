@@ -55,7 +55,7 @@ function Navbar() {
 							<NavbarLink path="about" name="About" />
 							<NavbarLink path="courses" name="Courses" />
 							<NavbarLink path="services" name="Services" />
-							<NavbarLink path="gallery" name="Gallery" />
+							<NavbarLink path="reviews" name="Reviews" />
 						</ul>
 					</div>
 				</div>

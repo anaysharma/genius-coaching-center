@@ -1,5 +1,7 @@
 function AccordionPanel(props: {
+	name: string;
 	title: string;
+	email: string;
 	content: string;
 	url: string;
 	id: number;
@@ -23,7 +25,15 @@ function AccordionPanel(props: {
 						className="flex w-full items-center justify-between text-left text-lg"
 						id={`panel${props.id}-title`}
 					>
-						{props.title}
+						<div>
+							<h3 className="pt-2 leading-3">{props.title}</h3>
+							<span className="pr-2 text-xs font-medium leading-3">
+								{props.name}
+							</span>
+							<span className="hidden border-l pl-2 text-xs leading-3 opacity-80 md:inline">
+								{props.email}
+							</span>
+						</div>
 						<img
 							className="mr-1 h-5 opacity-80 dark:invert"
 							src={props.ariaExpanded ? '/icons/minus.svg' : '/icons/plus.svg'}
@@ -31,23 +41,21 @@ function AccordionPanel(props: {
 					</span>
 					<img
 						aria-hidden="true"
-						className="accordion-icon h-8 rounded-full border bg-slate-100 p-2 dark:invert"
+						className="accordion-icon aspect-square h-11 rounded-full border dark:border-slate-600"
 						src={props.url}
 					/>
 				</button>
 			</h2>
 			<div
-				className="accordion-content"
+				className={`accordion-content transition-all duration-200 ${
+					props.ariaExpanded ? 'h-28' : 'h-0'
+				}`}
 				id={`panel${props.id}-content`}
 				aria-labelledby={`panel${props.id}-heading`}
 				role="region"
 			>
-				<p
-					className={`overflow-hidden px-2 transition-all duration-200 ${
-						props.ariaExpanded ? 'h-28' : 'h-0'
-					}`}
-				>
-					{props.content}
+				<p className="flex flex-col overflow-hidden py-2 px-4">
+					{props.content.substring(0, 200) + '.....'}
 				</p>
 			</div>
 		</div>

@@ -1,9 +1,9 @@
-function Gallery() {
+function Reviews() {
 	return (
 		<div className="grid h-screen place-items-center text-4xl">
-			Gallery Page
+			Reviews Page
 		</div>
 	);
 }
 
-export default Gallery;
+export default Reviews;

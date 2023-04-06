@@ -1,9 +1,42 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AccordionPanel from './AccordionPanel';
 import { accordionData } from '../data/accordionData';
+import { client } from '../client';
+import imageUrlBuilder from '@sanity/image-url';
+
+type reviewsType = {
+	id: string;
+	name: string;
+	email: string;
+	title: string;
+	content: string;
+	image: { _ref: string };
+}[];
 
 function Accordion() {
 	const [clickedPanel, setClickedPanel] = useState<number>(1);
+	const [reviews, setReviews] = useState<reviewsType>([]);
+
+	useEffect(() => {
+		client
+			.fetch(
+				`*[_type == "reviews"][0..4] {
+					_id,
+					name,
+					'image': profile.asset { _ref },
+					email,
+					title,
+					"content": content[0].children[0].text
+				}`
+			)
+			.then((res) => setReviews(res))
+			.catch(console.error);
+	}, []);
+
+	const getUrl = (ref: string) => {
+		const builder = imageUrlBuilder(client);
+		return builder.image(ref).url();
+	};
 
 	return (
 		<div className="reviews mt-12 flex flex-col gap-4 rounded-md p-4 md:px-0 lg:flex-row">
@@ -19,14 +52,16 @@ function Accordion() {
 				</p>
 			</div>
 			<div className="accordion grid flex-1 gap-2">
-				{accordionData.map((item, idx) => (
+				{reviews.map((item, idx) => (
 					<AccordionPanel
 						key={idx}
+						name={item.name}
+						email={item.email}
 						title={item.title}
 						content={item.content}
-						id={item.id}
-						ariaExpanded={item.id === clickedPanel ? true : false}
-						url={item.url}
+						id={idx}
+						ariaExpanded={idx === clickedPanel ? true : false}
+						url={getUrl(item.image._ref)}
 						clickHandler={setClickedPanel}
 					/>
 				))}

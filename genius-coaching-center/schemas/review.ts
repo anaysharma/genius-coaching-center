@@ -24,8 +24,8 @@ export default {
       title: 'Review Title'
     },
     {
-      title: 'Review Content',
       name: 'content',
+      title: 'Review Content',
       type: 'array',
       of: [{type: 'block'}]
     }

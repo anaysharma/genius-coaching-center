@@ -29,7 +29,7 @@ function Carousel() {
 
 	return (
 		<div className="relative w-full overflow-hidden">
-			<div className="flex h-[70vh] w-full items-center justify-center">
+			<div className="flex h-[600px] w-full items-center justify-center">
 				{carouselImages.map((url, index) => {
 					return (
 						<img
@@ -50,7 +50,7 @@ function Carousel() {
 				></div>
 				<section className="absolute inset-0 flex items-center sm:mt-0">
 					<div className="container mx-auto py-16 px-4 text-center sm:mt-0 lg:py-16 lg:px-12">
-						<h1 className="mb-4 text-5xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white">
+						<h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl">
 							Building A Better World, One Student At A Time.
 						</h1>
 						<p className="mb-8 text-lg font-normal text-black/75 dark:text-gray-300 sm:px-16 lg:text-xl xl:px-48">
