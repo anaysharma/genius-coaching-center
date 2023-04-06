@@ -26,11 +26,11 @@ function AccordionPanel(props: {
 						id={`panel${props.id}-title`}
 					>
 						<div>
-							<h3 className="pt-2 leading-3">{props.title}</h3>
-							<span className="pr-2 text-xs font-medium leading-3">
+							<h3 className="pt-2 font-medium leading-3">{props.title}</h3>
+							<span className="pr-2 text-xs font-medium opacity-70">
 								{props.name}
 							</span>
-							<span className="hidden border-l pl-2 text-xs leading-3 opacity-80 md:inline">
+							<span className="hidden border-l pl-2 text-xs leading-3 opacity-50 dark:border-l-slate-600 md:inline">
 								{props.email}
 							</span>
 						</div>
