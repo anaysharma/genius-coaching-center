@@ -6,12 +6,12 @@ function Accordion() {
 	const [clickedPanel, setClickedPanel] = useState<number>(1);
 
 	return (
-		<div className="reviews mt-8 flex flex-col gap-4 rounded-md border p-4 dark:border-slate-700 lg:flex-row">
+		<div className="reviews mt-12 flex flex-col gap-4 rounded-md p-4 md:px-0 lg:flex-row">
 			<div className="mb-4 w-full lg:w-96">
-				<h2 className="text-bold mb-2 font-rajdhani text-3xl lg:text-4xl">
+				<h2 className="mb-2 text-center font-rajdhani text-3xl font-bold md:text-left lg:text-4xl">
 					Our reviews
 				</h2>
-				<p className="lg:text-lg">
+				<p className="text-center md:text-left lg:text-lg">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero tempore
 					maiores animi eveniet ex? Beatae aut error accusantium unde
 					reprehenderit natus, blanditiis voluptatum aliquid magnam, ut

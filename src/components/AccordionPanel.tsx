@@ -7,7 +7,7 @@ function AccordionPanel(props: {
 	clickHandler: React.Dispatch<React.SetStateAction<number>>;
 }) {
 	return (
-		<div className="accordion-panel overflow-hidden rounded border shadow-md dark:border-slate-700">
+		<div className="accordion-panel overflow-hidden rounded border shadow dark:border-slate-700">
 			<h2 id={`panel${props.id}-heading`}>
 				<button
 					className={`accordion-trigger flex w-full flex-row-reverse items-center justify-end gap-2 bg-gray-50 p-2 dark:bg-slate-800 ${
@@ -44,7 +44,7 @@ function AccordionPanel(props: {
 			>
 				<p
 					className={`overflow-hidden px-2 transition-all duration-200 ${
-						props.ariaExpanded ? 'h-32' : 'h-0'
+						props.ariaExpanded ? 'h-28' : 'h-0'
 					}`}
 				>
 					{props.content}
