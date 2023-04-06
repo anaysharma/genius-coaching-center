@@ -29,7 +29,12 @@ function New() {
 				News
 			</h2>
 			<div className="z-5 relative grid h-96 w-full grid-cols-2 gap-2 rounded lg:grid-cols-4">
-				{JSON.stringify(news)}
+				{news.map((items) => (
+					<div key={items._id}>
+						<h2>{items.title}</h2>
+						<p>{items.content}</p>
+					</div>
+				))}
 			</div>
 		</div>
 	);

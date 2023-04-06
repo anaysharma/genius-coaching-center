@@ -1,3 +1,5 @@
 import news from "./news"
 import review from "./review"
-export const schemaTypes = [news, review]
+import poster from "./carousalImage"
+import gallery from "./gallery"
+export const schemaTypes = [news, review, poster, gallery]

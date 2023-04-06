@@ -1,15 +1,29 @@
 import { useEffect, useState } from 'react';
-import { CarouselData } from '../data/carousalData';
 import { Link } from 'react-router-dom';
+import { client } from '../client';
+import imageUrlBuilder from '@sanity/image-url';
 
 function Carousel() {
 	const [currentSlide, setCurrentSLide] = useState<number>(0);
+	const [carouselImages, setCarouselImages] = useState<string[]>([]);
 
 	useEffect(() => {
+		client
+			.fetch("*[_type=='carousel'][0] {'ref': images[].asset {_ref}}")
+			.then((res) => {
+				const builder = imageUrlBuilder(client);
+				const urls: string[] = [];
+				res.ref.forEach((item: {}) => {
+					urls.push(builder.image(item).url());
+				});
+				setCarouselImages(urls);
+			})
+			.catch(console.error);
+
 		const timerId = setInterval(
 			() =>
 				setCurrentSLide(
-					(currentSlide) => (currentSlide + 1) % CarouselData.length
+					(currentSlide) => (currentSlide + 1) % carouselImages.length
 				),
 			4000
 		);
@@ -19,10 +33,10 @@ function Carousel() {
 	return (
 		<div className="relative w-full overflow-hidden">
 			<div className="flex h-[70vh] w-full items-center justify-center">
-				{CarouselData.map((slide, index) => {
+				{carouselImages.map((url, index) => {
 					return (
 						<img
-							src={slide.image}
+							src={url}
 							alt={`image of slide number ${index} of hero carousal`}
 							key={index}
 							className={`
