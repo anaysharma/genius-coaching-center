@@ -6,14 +6,21 @@ const config: ClientConfig = {
   useCdn: true,
   apiVersion: "2023-04-06"
 }
-const client = createClient(config);
 
-export async function getNews() {
-  const news = await client.fetch("*[_type == 'document']");
-  return news;
-}
+export const client = createClient(config);
 
-export async function getReviews() {
-  const reviews = await client.fetch('*[title=="Review"]');
-  return reviews;
-}
+// export async function getNews() {
+//   const news = await client.fetch(`*[_type == "news"] {
+//     _id,
+//     title,
+//     "content": content[0].children[0].text
+//   }
+// `);
+//   console.log(news)
+//   return news;
+// }
+
+// export async function getReviews() {
+//   const reviews = await client.fetch('*[title=="Review"]');
+//   return reviews;
+// }
