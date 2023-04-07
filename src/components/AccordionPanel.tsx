@@ -26,7 +26,7 @@ function AccordionPanel(props: {
 						id={`panel${props.id}-title`}
 					>
 						<div>
-							<h3 className="pt-2 font-medium leading-3">{props.title}</h3>
+							<h3 className="text-xl font-medium leading-6">{props.title}</h3>
 							<span className="pr-2 text-xs font-medium opacity-70">
 								{props.name}
 							</span>
@@ -41,7 +41,7 @@ function AccordionPanel(props: {
 					</span>
 					<img
 						aria-hidden="true"
-						className="accordion-icon aspect-square h-11 rounded-full border dark:border-slate-600"
+						className="accordion-icon aspect-square h-14 rounded-full border dark:border-slate-600"
 						src={props.url}
 					/>
 				</button>

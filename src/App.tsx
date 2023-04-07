@@ -10,10 +10,13 @@ import Courses from './pages/Courses';
 import Services from './pages/Services';
 import Reviews from './pages/Reviews';
 
+import ScrollToTop from './utils/scrollTopTop';
+
 function App(): ReactElement {
 	return (
 		<>
 			<BrowserRouter>
+				<ScrollToTop />
 				<Routes>
 					<Route path="/" element={<Navbar />}>
 						<Route index element={<Home />} />

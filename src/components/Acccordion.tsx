@@ -39,7 +39,7 @@ function Accordion() {
 	};
 
 	return (
-		<div className="reviews mt-12 flex flex-col gap-4 rounded-md p-4 md:px-0 lg:flex-row">
+		<div className="reviews flex flex-col gap-4 rounded-md px-4 md:p-0 lg:flex-row">
 			<div className="mb-4 w-full lg:w-96">
 				<h2 className="mb-2 text-center font-rajdhani text-3xl font-bold md:text-left lg:text-4xl">
 					Our reviews

@@ -24,7 +24,7 @@ function New() {
 	}, []);
 
 	return (
-		<div className="mt-14 flex flex-col gap-4 rounded-lg px-4 md:px-0 lg:flex-row">
+		<div className="flex flex-col gap-4 rounded-lg px-4 md:px-0 lg:flex-row">
 			<div className="mb-4 w-full lg:w-96">
 				<h2 className="text-bold mb-4 text-center font-rajdhani text-3xl font-bold md:text-left lg:text-4xl">
 					Latest @Academy
