@@ -9,6 +9,7 @@ import About from './pages/About';
 import Courses from './pages/Courses';
 import Services from './pages/Services';
 import Reviews from './pages/Reviews';
+import NoPage from './pages/NoPage';
 
 import ScrollToTop from './utils/scrollTopTop';
 
@@ -24,7 +25,7 @@ function App(): ReactElement {
 						<Route path="courses" element={<Courses />} />
 						<Route path="services" element={<Services />} />
 						<Route path="reviews" element={<Reviews />} />
-						<Route path="*" element={<h1> NO PAGE </h1>} />
+						<Route path="*" element={<NoPage />} />
 					</Route>
 				</Routes>
 			</BrowserRouter>

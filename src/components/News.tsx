@@ -24,7 +24,7 @@ function New() {
 	}, []);
 
 	return (
-		<div className="flex flex-col gap-4 rounded-lg px-4 md:px-0 lg:flex-row">
+		<div className="flex flex-col gap-4 rounded-lg px-4 md:px-0 lg:flex-row lg:gap-8">
 			<div className="mb-4 w-full lg:w-96">
 				<h2 className="text-bold mb-4 text-center font-rajdhani text-3xl font-bold md:text-left lg:text-4xl">
 					Latest @Academy
@@ -39,7 +39,7 @@ function New() {
 			<ul className="flex max-h-[60vh] flex-1 snap-y snap-proximity flex-col gap-2 overflow-y-scroll rounded border-y dark:border-y-slate-700 lg:max-h-96">
 				{news.map((items) => (
 					<li
-						className="shrink-0 rounded border bg-gray-50 p-2 px-2 shadow dark:border-slate-700 dark:bg-slate-800"
+						className="shrink-0 rounded border p-2 px-2 dark:border-slate-700"
 						key={items._id}
 					>
 						<h2 className="border-b px-2 pb-2 text-lg font-bold dark:border-b-slate-700">
