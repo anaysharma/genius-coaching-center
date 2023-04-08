@@ -65,7 +65,9 @@ function AccordionPanel(props: {
 			</h2>
 			<div
 				className={`accordion-content overflow-y-scroll transition-all  duration-200 ${
-					props.ariaExpanded ? 'h-48 opacity-100 md:h-36' : 'h-0 opacity-0'
+					props.ariaExpanded
+						? 'mr-4 mb-2 h-48 opacity-100 md:h-36'
+						: 'h-0 opacity-0'
 				}`}
 				id={`panel${props.id}-content`}
 				aria-labelledby={`panel${props.id}-heading`}
