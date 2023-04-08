@@ -47,7 +47,7 @@ function AccordionPanel(props: {
 				</button>
 			</h2>
 			<div
-				className={`accordion-content overflow-scroll transition-all  duration-200 ${
+				className={`accordion-content overflow-y-scroll transition-all  duration-200 ${
 					props.ariaExpanded ? 'h-48 md:h-36' : 'h-0'
 				}`}
 				id={`panel${props.id}-content`}
