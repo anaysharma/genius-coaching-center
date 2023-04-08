@@ -45,7 +45,7 @@ function Carousel() {
 				})}
 				<div
 					className={
-						'z-2 absolute inset-0 bg-gradient-to-b from-white dark:from-slate-900'
+						'z-2 absolute inset-0 bg-gradient-to-b from-white/90 to-white/30 dark:from-slate-900/90 dark:to-slate-900/30'
 					}
 				></div>
 				<section className="absolute inset-0 flex items-center sm:mt-0">
