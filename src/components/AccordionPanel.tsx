@@ -47,16 +47,14 @@ function AccordionPanel(props: {
 				</button>
 			</h2>
 			<div
-				className={`accordion-content transition-all duration-200 ${
-					props.ariaExpanded ? 'h-28' : 'h-0'
+				className={`accordion-content overflow-scroll transition-all  duration-200 ${
+					props.ariaExpanded ? 'h-48 md:h-36' : 'h-0'
 				}`}
 				id={`panel${props.id}-content`}
 				aria-labelledby={`panel${props.id}-heading`}
 				role="region"
 			>
-				<p className="flex flex-col overflow-hidden py-2 px-4">
-					{props.content.substring(0, 200) + '.....'}
-				</p>
+				<p className="py-2 px-4">{props.content}</p>
 			</div>
 		</div>
 	);

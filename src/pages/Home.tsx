@@ -14,6 +14,7 @@ function Home() {
 				<New />
 				<Seperator />
 				<Accordion />
+				<Seperator />
 			</div>
 		</div>
 	);

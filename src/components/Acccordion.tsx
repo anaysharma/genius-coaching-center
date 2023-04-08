@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import AccordionPanel from './AccordionPanel';
-import { accordionData } from '../data/accordionData';
 import { client } from '../client';
 import imageUrlBuilder from '@sanity/image-url';
 
@@ -14,13 +13,13 @@ type reviewsType = {
 }[];
 
 function Accordion() {
-	const [clickedPanel, setClickedPanel] = useState<number>(1);
+	const [clickedPanel, setClickedPanel] = useState<number>(0);
 	const [reviews, setReviews] = useState<reviewsType>([]);
 
 	useEffect(() => {
 		client
 			.fetch(
-				`*[_type == "reviews"][0..4] {
+				`*[_type == "reviews"][0..3] {
 					_id,
 					name,
 					'image': profile.asset { _ref },
