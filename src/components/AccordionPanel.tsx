@@ -21,7 +21,7 @@ function AccordionPanel(props: {
 				>
 					<span
 						className={`flex h-full w-full items-center justify-between text-left text-lg transition-all duration-200 ${
-							props.ariaExpanded ? 'pl-28' : 'pl-12'
+							props.ariaExpanded ? 'pl-24' : 'pl-12'
 						}`}
 						id={`panel${props.id}-title`}
 					>
@@ -56,8 +56,8 @@ function AccordionPanel(props: {
 					</span>
 					<img
 						aria-hidden="true"
-						className={`accordion-icon absolute top-2 aspect-square rounded-full border transition-all duration-200 dark:border-slate-600 ${
-							props.ariaExpanded ? 'h-24 rounded' : 'h-10'
+						className={`accordion-icon absolute aspect-square rounded-full border transition-all duration-200 dark:border-slate-600 ${
+							props.ariaExpanded ? 'top-3 left-3 h-20' : 'top-2 h-10'
 						}`}
 						src={props.url}
 					/>
@@ -73,7 +73,7 @@ function AccordionPanel(props: {
 				aria-labelledby={`panel${props.id}-heading`}
 				role="region"
 			>
-				<p className="ml-28 p-2">{props.content}</p>
+				<p className="ml-24 p-2">{props.content}</p>
 			</div>
 		</div>
 	);
