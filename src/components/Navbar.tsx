@@ -67,8 +67,7 @@ function Navbar() {
 				</div>
 			</nav>
 
-			<main className="dark:bg-gray-900 dark:text-white">
-				<span id="top-link"></span>
+			<main>
 				<Outlet />
 			</main>
 		</>
