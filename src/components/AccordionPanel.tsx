@@ -20,32 +20,33 @@ function AccordionPanel(props: {
 					}}
 				>
 					<span
-						className={`flex w-full items-center justify-between text-left text-lg transition-all duration-200 ${
+						className={`flex h-full w-full items-center justify-between text-left text-lg transition-all duration-200 ${
 							props.ariaExpanded ? 'pl-28' : 'pl-12'
 						}`}
 						id={`panel${props.id}-title`}
 					>
-						<div>
+						<div className="relative grid h-full w-full grid-flow-row items-center">
 							<h3
-								className={`overflow-hidden text-xl font-medium transition-all duration-200 ${
-									props.ariaExpanded ? 'h-0' : 'h-6'
+								className={`absolute text-xl font-medium transition-all duration-200 ${
+									props.ariaExpanded ? 'opacity-0' : 'opacity-1'
 								}`}
 							>
 								{props.title}
 							</h3>
 							<span
-								className={`pr-2 font-medium transition-all duration-200 ${
-									props.ariaExpanded ? 'text-lg' : 'text-xs opacity-70'
+								className={`absolute pr-2 font-medium transition-all duration-200 ${
+									props.ariaExpanded ? 'opacity-1' : 'opacity-0'
 								}`}
 							>
 								{props.name}
-							</span>
-							<span
-								className={`hidden text-xs leading-3 opacity-50 transition-all duration-200 dark:border-l-slate-600 ${
-									props.ariaExpanded ? 'md:block' : 'md:inline'
-								}`}
-							>
-								{props.email}
+
+								<span
+									className={`text-xs leading-3 opacity-50 transition-all duration-200 dark:border-l-slate-600 ${
+										props.ariaExpanded ? 'block' : 'hidden'
+									}`}
+								>
+									{props.email}
+								</span>
 							</span>
 						</div>
 						<img
@@ -56,7 +57,7 @@ function AccordionPanel(props: {
 					<img
 						aria-hidden="true"
 						className={`accordion-icon absolute top-2 aspect-square rounded-full border transition-all duration-200 dark:border-slate-600 ${
-							props.ariaExpanded ? 'h-24' : ' h-10'
+							props.ariaExpanded ? 'h-24 rounded' : 'h-10'
 						}`}
 						src={props.url}
 					/>
@@ -70,7 +71,7 @@ function AccordionPanel(props: {
 				aria-labelledby={`panel${props.id}-heading`}
 				role="region"
 			>
-				<p className="ml-24 py-2 px-4">{props.content}</p>
+				<p className="ml-28 p-2">{props.content}</p>
 			</div>
 		</div>
 	);
