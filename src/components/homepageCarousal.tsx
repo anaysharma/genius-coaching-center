@@ -43,11 +43,7 @@ function Carousel() {
 						/>
 					);
 				})}
-				<div
-					className={
-						'z-2 absolute inset-0 bg-gradient-to-b from-white/90 to-white/30 dark:from-slate-900/90 dark:to-slate-900/30'
-					}
-				></div>
+				<div className="z-2 absolute inset-0 bg-gradient-to-b from-white/90 to-white/30 dark:from-slate-900/90 dark:to-slate-900/30"></div>
 				<section className="absolute inset-0 flex items-center sm:mt-0">
 					<div className="container mx-auto py-16 px-4 text-center sm:mt-0 lg:py-16 lg:px-12">
 						<h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl">

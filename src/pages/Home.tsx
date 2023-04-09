@@ -3,6 +3,8 @@ import Glance from '../components/Glance';
 import New from '../components/News';
 import Carousal from '../components/homepageCarousal';
 import Seperator from '../components/SectionSaperator';
+import Moto from '../components/Moto';
+import DirectorCard from '../components/DirectorCard';
 
 function Home() {
 	return (
@@ -14,6 +16,10 @@ function Home() {
 				<New />
 				<Seperator />
 				<Accordion />
+				<Seperator />
+				<Moto />
+				<Seperator />
+				<DirectorCard />
 				<Seperator />
 			</div>
 		</div>
