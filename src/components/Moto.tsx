@@ -12,8 +12,8 @@ export default function Moto() {
 					achieve their goals.
 				</span>
 				<span>
-					We believe that computer skills are essential in today's world, and
-					that everyone should have the opportunity to learn them. We are
+					We believe that computer skills are essential in today&apos;s world,
+					and that everyone should have the opportunity to learn them. We are
 					committed to providing high-quality coaching and training to help our
 					students develop the skills they need to succeed in their personal and
 					professional lives.
