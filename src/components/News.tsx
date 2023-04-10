@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { client } from '../client';
+import { client } from '@/client';
 
 type newsResponseType = {
 	_id: string;

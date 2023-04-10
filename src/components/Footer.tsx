@@ -1,4 +1,6 @@
-import getDarkModePreference from '../utils/getDarkModePreference';
+import Image from 'next/image';
+import getDarkModePreference from '../utils/useDarkModePreference';
+import Link from 'next/link';
 
 function Footer() {
 	return (
@@ -6,8 +8,8 @@ function Footer() {
 			<div className="container mx-auto w-full p-4 sm:p-6">
 				<div className="relative md:flex md:justify-between">
 					<div className="mb-6 md:mb-0">
-						<a href="/" className="flex items-center">
-							<img
+						<Link href="/" className="flex items-center">
+							<Image
 								src={
 									getDarkModePreference() == 'dark'
 										? '/logo-dark.svg'
@@ -15,6 +17,8 @@ function Footer() {
 								}
 								className="mr-2 h-8"
 								alt="genius coaching center Logo"
+								height={50}
+								width={50}
 							/>
 							<span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
 								<h3 className="flex-1 justify-center text-xs font-medium leading-none">
@@ -24,7 +28,7 @@ function Footer() {
 									<br /> Computer Academy
 								</h3>
 							</span>
-						</a>
+						</Link>
 					</div>
 					<div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
 						<div>
@@ -33,20 +37,20 @@ function Footer() {
 							</h2>
 							<ul className="font-medium text-gray-600 dark:text-gray-400">
 								<li className="mb-4">
-									<a
+									<Link
 										href="/courses"
 										className="hover:text-teal-600 hover:underline hover:dark:text-teal-400"
 									>
 										Courses
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a
+									<Link
 										href="/services"
 										className="hover:text-teal-600 hover:underline hover:dark:text-teal-400"
 									>
 										Services
-									</a>
+									</Link>
 								</li>
 							</ul>
 						</div>
@@ -56,20 +60,20 @@ function Footer() {
 							</h2>
 							<ul className="font-medium text-gray-600 dark:text-gray-400">
 								<li className="mb-4">
-									<a
+									<Link
 										href="twitter.link"
 										className="hover:text-teal-600 hover:underline hover:dark:text-teal-400 "
 									>
 										Twitter
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a
+									<Link
 										href="instagram.link"
 										className="hover:text-teal-600 hover:underline hover:dark:text-teal-400"
 									>
 										Instagram
-									</a>
+									</Link>
 								</li>
 							</ul>
 						</div>
@@ -79,42 +83,42 @@ function Footer() {
 							</h2>
 							<ul className="font-medium text-gray-600 dark:text-gray-400">
 								<li className="mb-4">
-									<a
+									<Link
 										href="#"
 										className="hover:text-teal-600 hover:underline hover:dark:text-teal-400"
 									>
 										Privacy Policy
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a
+									<Link
 										href="#"
 										className="hover:text-teal-600 hover:underline hover:dark:text-teal-400"
 									>
 										Terms &amp; Conditions
-									</a>
+									</Link>
 								</li>
 							</ul>
 						</div>
-						<a
+						<Link
 							href="#top-link"
 							className="mt-auto flex w-24 font-medium text-gray-600 hover:underline dark:text-gray-400 sm:absolute sm:right-20 sm:top-0 sm:mr-1 md:left-0 md:bottom-0 md:top-auto"
 						>
 							go to top
-						</a>
+						</Link>
 					</div>
 				</div>
 				<hr className="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto" />
 				<div className="sm:flex sm:items-center sm:justify-between">
 					<span className="text-sm text-gray-500 dark:text-gray-400 sm:text-center">
 						© 2023{' '}
-						<a href="/" className="hover:text-teal-600 hover:underline">
+						<Link href="/" className="hover:text-teal-600 hover:underline">
 							Genius Computer Academy™
-						</a>
+						</Link>
 						. All Rights Reserved.
 					</span>
 					<div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-						<a
+						<Link
 							href="#"
 							className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
 						>
@@ -131,8 +135,8 @@ function Footer() {
 								/>
 							</svg>
 							<span className="sr-only">Facebook page</span>
-						</a>
-						<a
+						</Link>
+						<Link
 							href="#"
 							className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
 						>
@@ -149,8 +153,8 @@ function Footer() {
 								/>
 							</svg>
 							<span className="sr-only">Instagram page</span>
-						</a>
-						<a
+						</Link>
+						<Link
 							href="#"
 							className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
 						>
@@ -163,7 +167,7 @@ function Footer() {
 								<path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
 							</svg>
 							<span className="sr-only">Twitter page</span>
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

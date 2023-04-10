@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import Image from 'next/image';
+import Link from 'next/link';
 
 function Glance() {
 	return (
@@ -6,7 +7,13 @@ function Glance() {
 			<div className="flex min-h-[6rem] w-full bg-slate-100 px-4 py-8 dark:bg-slate-900 sm:items-center md:bg-gray-100 md:py-0 md:px-0 md:pt-0 md:pb-0 md:dark:bg-slate-700">
 				<ul className="justify-left grid w-full gap-4 px-4 md:grid-flow-col md:gap-0 md:px-0">
 					<li className="flex items-center gap-4 border-gray-500 dark:border-slate-400 md:justify-center md:border-r">
-						<img src="/icons/email.svg" className="h-5 dark:invert" alt="" />
+						<Image
+							src="/icons/email.svg"
+							width={20}
+							height={20}
+							className="h-5 dark:invert"
+							alt=""
+						/>
 						<a
 							className="opacity-80 hover:underline"
 							href="mailto:name@email.com"
@@ -15,7 +22,9 @@ function Glance() {
 						</a>
 					</li>
 					<li className="flex gap-4 border-gray-500 dark:border-slate-400 md:justify-center md:border-r">
-						<img
+						<Image
+							width={20}
+							height={20}
 							src="/icons/smartphone.svg"
 							className="h-5 dark:invert"
 							alt=""
@@ -28,13 +37,21 @@ function Glance() {
 						</a>
 					</li>
 					<li className="flex gap-4 md:justify-center">
-						<img src="/icons/whatsapp.svg" className="h-5 dark:invert" alt="" />
+						<Image
+							width={20}
+							height={20}
+							src="/icons/whatsapp.svg"
+							className="h-5 dark:invert"
+							alt=""
+						/>
 						<p className="opacity-80">+91-0123456789</p>
 					</li>
 				</ul>
 			</div>
 			<div className="content flex h-full w-full justify-between xl:px-8">
-				<img
+				<Image
+					width={400}
+					height={400}
 					src="/Learning-cuate.png"
 					alt="illustration of a boy studying"
 					className="hidden h-80 object-cover lg:block"
@@ -50,7 +67,7 @@ function Glance() {
 					</p>
 					<div className="flex flex-1 items-center">
 						<Link
-							to="/courses"
+							href="/courses"
 							className="flex h-12 w-full cursor-pointer items-center justify-center rounded bg-teal-600  text-white transition-all hover:translate-y-[-4px] hover:shadow-tealButtonHover sm:w-36"
 						>
 							Enroll Now

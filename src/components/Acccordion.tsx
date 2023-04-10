@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import AccordionPanel from './AccordionPanel';
-import { client } from '../client';
+import { client } from '@/client';
 import imageUrlBuilder from '@sanity/image-url';
 
 type reviewsType = {

@@ -1,13 +1,15 @@
+import Image from 'next/image';
+
 export default function DirectorCard() {
 	return (
 		<div className="mx-auto px-4 md:px-0 lg:w-[970px]">
 			<figure className="overflow-hidden rounded border p-8 dark:border-slate-700 lg:flex lg:p-0">
-				<img
+				<Image
 					className="mx-auto aspect-square w-40 rounded-full lg:h-full lg:w-80 lg:rounded-none"
 					src="/index.png"
-					alt=""
-					width="384"
-					height="512"
+					alt="reviewer image"
+					height={400}
+					width={400}
 				/>
 				<div className="space-y-4 text-center lg:flex-1 lg:text-left">
 					<blockquote className="p-4 text-lg font-medium before:content-[open-quote] after:content-[close-quote] lg:p-8">

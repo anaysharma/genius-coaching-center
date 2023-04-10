@@ -1,9 +1,10 @@
-import { Outlet, Link } from 'react-router-dom';
+import Link from 'next/link';
 import NavbarLink from './NavbarLink';
 import { useState } from 'react';
 import Hamburger from './Hamburger';
-import getDarkModePreference from '../utils/getDarkModePreference';
+import useDarkModePreference from '../utils/useDarkModePreference';
 import useScrollPosition from '../hooks/useScrollPosition';
+import Image from 'next/image';
 
 function Navbar() {
 	const [isOpen, setOpen] = useState<boolean>(false);
@@ -21,15 +22,20 @@ function Navbar() {
 			>
 				<div className="container mx-auto flex h-full w-full justify-between md:px-6">
 					<div className="flex h-full w-full justify-between md:w-fit">
-						<Link to="/" className="flex h-full w-full items-center gap-2 py-2">
-							<img
+						<Link
+							href="/"
+							className="flex h-full w-full items-center gap-2 py-2"
+						>
+							<Image
 								className="h-full py-2 md:p-0"
 								src={
-									getDarkModePreference() == 'dark'
+									useDarkModePreference() == 'dark'
 										? '/logo-dark.svg'
 										: '/logo.svg'
 								}
 								alt=""
+								height={50}
+								width={50}
 							/>
 							<h3 className="flex-1 justify-center text-center text-sm leading-none md:text-left">
 								<span className="text-xl font-semibold leading-none dark:text-white">
@@ -51,13 +57,13 @@ function Navbar() {
 							className="flex h-1/2 w-full flex-col items-center md:h-full md:flex-row md:gap-4 md:p-0"
 							onClick={() => setOpen(false)}
 						>
-							<NavbarLink path="" name="Home" />
+							<NavbarLink path="/" name="Home" />
 							<NavbarLink path="about" name="About" />
 							<NavbarLink path="courses" name="Courses" />
 							<NavbarLink path="services" name="Services" />
 							<NavbarLink path="reviews" name="Reviews" />
 							<Link
-								to="contact"
+								href="contact"
 								className="-mt-px flex h-full w-screen items-center justify-center rounded border-y px-8 text-3xl hover:bg-teal-600 hover:text-white dark:border-gray-700 md:mt-0 md:h-auto md:w-auto md:border md:bg-gray-100/80 md:py-2 md:text-base md:dark:border-slate-700 md:dark:bg-slate-800/80"
 							>
 								Contact
@@ -66,10 +72,6 @@ function Navbar() {
 					</div>
 				</div>
 			</nav>
-
-			<main>
-				<Outlet />
-			</main>
 		</>
 	);
 }

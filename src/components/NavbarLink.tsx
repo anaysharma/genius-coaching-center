@@ -1,5 +1,5 @@
-import getCurrentRoute from '../utils/getCurrentRoute';
-import { Link } from 'react-router-dom';
+import getCurrentRoute from '../utils/useCurrentRoute';
+import Link from 'next/link';
 
 function NavbarLink(props: { name: string; path: string }) {
 	const { name, path } = props;
@@ -12,7 +12,7 @@ function NavbarLink(props: { name: string; path: string }) {
 		>
 			<Link
 				className="flex h-full items-center text-3xl md:text-base"
-				to={path}
+				href={path}
 			>
 				{name}
 			</Link>

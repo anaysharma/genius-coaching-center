@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 function AccordionPanel(props: {
 	name: string;
 	title: string;
@@ -49,17 +51,23 @@ function AccordionPanel(props: {
 								</span>
 							</span>
 						</div>
-						<img
+						<Image
 							className="mr-1 h-5 opacity-80 dark:invert"
 							src={props.ariaExpanded ? '/icons/minus.svg' : '/icons/plus.svg'}
+							alt="reviewer image"
+							height={20}
+							width={20}
 						/>
 					</span>
-					<img
+					<Image
 						aria-hidden="true"
 						className={`accordion-icon absolute aspect-square rounded-full border transition-all duration-200 dark:border-slate-600 ${
-							props.ariaExpanded ? 'top-3 left-3 h-20' : 'top-2 h-10'
+							props.ariaExpanded ? 'top-3 left-3 h-20' : 'top-2 h-10 w-10'
 						}`}
 						src={props.url}
+						alt="reviewer image"
+						height={80}
+						width={80}
 					/>
 				</button>
 			</h2>
