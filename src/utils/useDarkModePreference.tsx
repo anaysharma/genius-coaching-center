@@ -1,18 +1,8 @@
 import { useEffect, useState } from 'react';
+import useCurrentBrowserColor from './useCurrentBrowserColor';
 
 const useDarkModePreference = (): 'dark' | 'light' => {
-	const getCurrentBrowserColor = (): 'dark' | 'light' => {
-		if (
-			typeof window !== 'undefined' &&
-			window.matchMedia &&
-			window.matchMedia('(prefers-color-scheme: dark)').matches
-		) {
-			return 'dark';
-		}
-		return 'light';
-	};
-
-	const [mode, setMode] = useState(getCurrentBrowserColor());
+	const [mode, setMode] = useState(useCurrentBrowserColor());
 
 	useEffect(() => {
 		window

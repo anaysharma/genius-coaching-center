@@ -24,4 +24,5 @@ module.exports = {
 		},
 	},
 	plugins: [],
+	safelist: ['fill-teal-950', 'dark:fill-slate-100'],
 };

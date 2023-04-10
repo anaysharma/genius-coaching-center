@@ -31,7 +31,7 @@ export default function Document() {
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</Head>
 
-			<body>
+			<body className="dark:text-slate-100 text-teal-950 dark:bg-slate-900">
 				<Main />
 				<NextScript />
 			</body>
