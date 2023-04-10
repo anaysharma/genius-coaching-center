@@ -9,8 +9,6 @@ const nextConfig = {
 				hostname: 'cdn.sanity.io',
 			},
 		],
-		loader: 'akamai',
-		path: '/',
 	},
 };
 
