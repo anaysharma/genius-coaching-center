@@ -1,10 +1,10 @@
 export default function Moto() {
 	return (
 		<div className="flex flex-col gap-4 px-4 text-center md:p-0 md:text-left lg:flex-row lg:gap-8">
-			<h2 className="w-full font-rajdhani text-4xl font-bold lg:w-96">
+			<h2 className="w-full font-rajdhani text-4xl font-bold lg:basis-64">
 				What we believe here.
 			</h2>
-			<p className="before:content-comma grid flex-1 gap-6 rounded border p-6">
+			<p className="before:content-comma flex-1 grid gap-6 rounded border p-6 dark:border-slate-700">
 				<span>
 					At Genius Coaching Center, we believe in the power of education to
 					transform lives. We believe that everyone has the potential to learn

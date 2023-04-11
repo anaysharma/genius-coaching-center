@@ -8,6 +8,7 @@ import ScrollToTop from '@/utils/scrollTopTop';
 export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<>
+			<span id="top-link"></span>
 			<ScrollToTop />
 			<Navbar />
 			<Component {...pageProps} />

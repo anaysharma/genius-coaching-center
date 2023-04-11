@@ -40,7 +40,7 @@ function Footer() {
 									/>
 								</g>
 							</svg>
-							<span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
+							<span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white pl-2">
 								<h3 className="flex-1 justify-center text-xs font-medium leading-none">
 									<span className="text-base font-semibold leading-none">
 										Genius

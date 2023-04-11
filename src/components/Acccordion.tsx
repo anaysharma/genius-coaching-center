@@ -19,7 +19,7 @@ function Accordion() {
 	useEffect(() => {
 		client
 			.fetch(
-				`*[_type == "reviews"][0..3] {
+				`*[_type == "reviews"][0..5] {
 					_id,
 					name,
 					'image': profile.asset { _ref },
@@ -39,7 +39,7 @@ function Accordion() {
 
 	return (
 		<div className="reviews flex flex-col gap-4 px-4 md:p-0 lg:flex-row lg:gap-8">
-			<div className="mb-4 w-full lg:w-96">
+			<div className="mb-4 w-full lg:basis-64">
 				<h2 className="mb-2 text-center font-rajdhani text-3xl font-bold md:text-left lg:text-4xl">
 					Our reviews
 				</h2>

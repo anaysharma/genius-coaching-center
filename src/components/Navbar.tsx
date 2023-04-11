@@ -14,7 +14,7 @@ function Navbar() {
 				id="nav-bar"
 				className={`fixed z-10 h-16 w-full pl-4 font-rajdhani font-medium transition-colors duration-700 dark:text-white/80 md:h-14 md:pl-0 ${
 					scrollPosition
-						? 'bg-white/80 backdrop-blur-sm dark:bg-slate-900/80'
+						? 'bg-white/80 backdrop-blur-sm dark:bg-gray-900/80'
 						: 'bg-transparent backdrop-blur-none'
 				}`}
 			>
@@ -84,7 +84,7 @@ function Navbar() {
 							<NavbarLink path="reviews" name="Reviews" />
 							<Link
 								href="contact"
-								className="-mt-px flex h-full w-screen items-center justify-center rounded border-y px-8 text-3xl hover:bg-teal-600 hover:text-white dark:border-gray-700 md:mt-0 md:h-auto md:w-auto md:border md:bg-gray-100/80 md:py-2 md:text-base md:dark:border-slate-700 md:dark:bg-slate-800/80"
+								className="-mt-px flex h-full w-screen items-center justify-center rounded border-y px-8 text-3xl hover:bg-teal-600 hover:text-white dark:border-gray-700 md:mt-0 md:h-auto md:w-auto md:border md:dark:border-slate-700 md:bg-white md:py-2 md:text-base  md:dark:bg-gray-900"
 							>
 								Contact
 							</Link>

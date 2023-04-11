@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 function Glance() {
 	return (
-		<div className="relative z-[5] mx-4 -mt-12 flex flex-col items-center justify-between overflow-hidden rounded border bg-white  dark:border-slate-700 dark:bg-slate-800 md:mx-0 xl:mx-20">
-			<div className="flex min-h-[6rem] w-full bg-slate-100 px-4 py-8 dark:bg-slate-900 sm:items-center md:bg-gray-100 md:py-0 md:px-0 md:pt-0 md:pb-0 md:dark:bg-slate-700">
+		<div className="relative z-[5] mx-4 -mt-12 flex flex-col items-center justify-between overflow-hidden rounded border bg-white  dark:border-slate-700 dark:bg-gray-800 md:mx-0 xl:mx-20">
+			<div className="flex min-h-[6rem] w-full bg-slate-100 px-4 py-8 dark:bg-slate-900 sm:items-center md:bg-gray-100 md:py-0 md:px-0 md:pt-0 md:pb-0 md:dark:bg-gray-700">
 				<ul className="justify-left grid w-full gap-4 px-4 md:grid-flow-col md:gap-0 md:px-0">
 					<li className="flex items-center gap-4 border-gray-500 dark:border-slate-400 md:justify-center md:border-r">
 						<Image

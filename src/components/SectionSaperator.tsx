@@ -1,3 +1,3 @@
 export default function Seperator() {
-	return <hr className="mx-auto my-16 w-3/4"></hr>;
+	return <div className="mx-auto my-16 h-px bg-transparent w-5/6"></div>;
 }

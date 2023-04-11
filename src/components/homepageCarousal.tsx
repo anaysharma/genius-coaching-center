@@ -53,8 +53,8 @@ function Carousel() {
 						</h1>
 						<p className="mb-8 text-lg font-normal opacity-80 sm:px-16 lg:text-xl xl:px-48">
 							Here at Genius Computer Academy we focus on education that unlock
-							students href grow by falling in love with technology and
-							innovation. we love href teach, href see you grow!
+							students to grow by falling in love with technology and
+							innovation. we love to teach, to see you grow!
 						</p>
 						<div className="mb-8 flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 lg:mb-16">
 							<Link
@@ -65,7 +65,7 @@ function Carousel() {
 							</Link>
 							<Link
 								href="/courses"
-								className="inline-flex items-center justify-center rounded bg-white py-3 px-5 text-center text-base font-medium text-gray-900 transition-all hover:translate-y-[-4px] hover:shadow-slateButhrefnHoverLight focus:ring-4 focus:ring-gray-100 dark:bg-slate-700 dark:text-white dark:hover:shadow-slateButhrefnHoverDark dark:focus:ring-gray-800 sm:w-44 "
+								className="inline-flex items-center justify-center rounded bg-white py-3 px-5 text-center text-base font-medium text-gray-900 transition-all hover:translate-y-[-4px] hover:shadow-slateButhrefnHoverLight focus:ring-4 focus:ring-gray-100 dark:bg-gray-800 dark:text-white dark:hover:shadow-slateButhrefnHoverDark dark:focus:ring-gray-800 sm:w-44 "
 							>
 								Get Started
 							</Link>

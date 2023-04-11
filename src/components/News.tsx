@@ -25,7 +25,7 @@ function New() {
 
 	return (
 		<div className="flex flex-col gap-4 rounded-lg px-4 md:px-0 lg:flex-row lg:gap-8">
-			<div className="mb-4 w-full lg:w-96">
+			<div className="mb-4 w-full lg:basis-64">
 				<h2 className="text-bold mb-4 text-center font-rajdhani text-3xl font-bold md:text-left lg:text-4xl">
 					Latest @Academy
 				</h2>
@@ -36,7 +36,7 @@ function New() {
 					glimpse of thing happened recently.
 				</p>
 			</div>
-			<ul className="flex max-h-[60vh] flex-1 snap-y snap-proximity flex-col gap-2 overflow-y-scroll rounded border-y dark:border-y-slate-700 lg:max-h-96">
+			<ul className="flex max-h-[70vh] flex-1 snap-y snap-proximity flex-col gap-2 overflow-y-scroll rounded border-y dark:border-y-slate-700 lg:max-h-[500px]">
 				{news.map((items) => (
 					<li
 						className="shrink-0 rounded border p-2 px-2 dark:border-slate-700"

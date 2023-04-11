@@ -17,7 +17,7 @@ export default function noPage() {
 					height={80}
 				/>
 				<h1 className="text-3xl font-bold">
-					Oops! this page doesn$apost exist.
+					Oops! this page doesn&apos;t exist.
 				</h1>
 				<p>return to home page to browse more (ERROR: 404).</p>
 				<Link
