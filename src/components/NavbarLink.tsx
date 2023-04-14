@@ -6,12 +6,13 @@ function NavbarLink(props: { name: string; path: string }) {
 	return (
 		<li
 			className={`-mt-px flex h-full w-screen justify-center border-y hover:text-teal-600 dark:border-gray-700 hover:dark:text-teal-400 md:mt-0 md:w-16 md:border-0 ${
-				getCurrentRoute() == path &&
-				'text-teal-600 dark:text-teal-400 md:shadow-accent'
+				getCurrentRoute() == path
+					? 'text-teal-600 dark:text-teal-400 md:shadow-accent opacity-100'
+					: 'opacity-80'
 			}`}
 		>
 			<Link
-				className="flex h-full items-center text-3xl md:text-base"
+				className="flex h-full font-semibold items-center text-3xl md:text-base"
 				href={path}
 			>
 				{name}

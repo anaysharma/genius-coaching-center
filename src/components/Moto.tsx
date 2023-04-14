@@ -4,7 +4,7 @@ export default function Moto() {
 			<h2 className="w-full font-rajdhani text-4xl font-bold lg:basis-64">
 				What we believe here.
 			</h2>
-			<p className="before:content-comma flex-1 grid gap-6 rounded border p-6 dark:border-slate-700">
+			<p className="before:content-comma text-lg flex-1 grid gap-6 rounded border p-6 dark:border-slate-700">
 				<span>
 					At Genius Coaching Center, we believe in the power of education to
 					transform lives. We believe that everyone has the potential to learn
@@ -37,12 +37,6 @@ export default function Moto() {
 					are committed to helping our students achieve their full potential. We
 					believe that with hard work, dedication, and the right guidance,
 					anyone can become a genius in their own right.
-				</span>
-				<span className="grid">
-					- Himanshu kushwaha{' '}
-					<span className="text-sm opacity-70">
-						director @genius computer academy
-					</span>
 				</span>
 			</p>
 		</div>

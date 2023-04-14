@@ -12,13 +12,13 @@ function Navbar() {
 		<>
 			<nav
 				id="nav-bar"
-				className={`fixed z-10 h-16 w-full pl-4 font-rajdhani font-medium transition-colors duration-700 dark:text-white/80 md:h-14 md:pl-0 ${
+				className={`fixed z-10 h-16 w-full pl-4 font-rajdhani transition-colors duration-700 dark:text-white/80 md:h-14 md:pl-0 ${
 					scrollPosition
-						? 'bg-white/80 backdrop-blur-sm dark:bg-gray-900/80'
-						: 'bg-transparent backdrop-blur-none'
+						? 'bg-white/80 backdrop-blur-sm dark:bg-gray-900/80 border-b dark:border-b-slate-800'
+						: 'bg-transparent backdrop-blur-none border-b-transparent dark:border-b-transparent'
 				}`}
 			>
-				<div className="container mx-auto flex h-full w-full justify-between md:px-6">
+				<div className="container mx-auto flex h-full w-full justify-between lg:px-6 2xl:px-20">
 					<div className="flex h-full w-full justify-between md:w-fit">
 						<Link
 							href="/"
@@ -36,28 +36,28 @@ function Navbar() {
 								<g id="layer1">
 									<path
 										id="path950"
-										fill-opacity="1"
+										fillOpacity="1"
 										stroke="none"
-										stroke-width="13.5218"
-										stroke-linecap="round"
-										stroke-dasharray="none"
-										stroke-opacity="1"
+										strokeWidth="13.5218"
+										strokeLinecap="round"
+										strokeDasharray="none"
+										strokeOpacity="1"
 										d="m 60.000049,2 -15.000118,8.660453 v 11.546582 l 15.000118,-8.659936 39.752613,22.951054 9.999908,-5.773291 z M 25.000118,22.207035 10,30.867489 v 57.734977 l 50.000049,28.867484 16.172139,-9.33689 -9.999906,-5.77381 -6.172233,3.56361 L 19.999906,82.829174 V 36.640779 l 5.000212,-2.886644 z m 35.288802,3.232878 -9.999906,5.773808 49.711176,28.70109 v 22.914363 l -13.827578,7.983493 9.999389,5.773291 13.828099,-7.983492 V 65.688103 59.687951 54.141004 Z"
 									/>
 									<path
 										id="rect1733"
 										fill="#00aa88"
-										fill-opacity="1"
+										fillOpacity="1"
 										stroke="none"
-										stroke-width="10.2778"
-										stroke-linecap="round"
-										stroke-dasharray="none"
-										stroke-opacity="1"
+										strokeWidth="10.2778"
+										strokeLinecap="round"
+										strokeDasharray="none"
+										strokeOpacity="1"
 										d="M 40.000236,13.390002 29.999813,19.16381 v 44.985368 11.255644 0.291455 L 81.262834,105.29292 91.263257,99.51963 40.000236,69.922986 Z"
 									/>
 								</g>
 							</svg>
-							<h3 className="flex-1 justify-center text-center text-sm leading-none md:text-left">
+							<h3 className="flex-1 justify-center text-center font-medium text-sm leading-none md:text-left">
 								<span className="text-xl font-semibold leading-none dark:text-white">
 									Genius
 								</span>
@@ -84,7 +84,7 @@ function Navbar() {
 							<NavbarLink path="reviews" name="Reviews" />
 							<Link
 								href="contact"
-								className="-mt-px flex h-full w-screen items-center justify-center rounded border-y px-8 text-3xl hover:bg-teal-600 hover:text-white dark:border-gray-700 md:mt-0 md:h-auto md:w-auto md:border md:dark:border-slate-700 md:bg-white md:py-2 md:text-base  md:dark:bg-gray-900"
+								className="-mt-px flex font-semibold h-full w-screen items-center justify-center rounded border-y px-8 text-3xl hover:bg-teal-600 hover:text-white dark:border-gray-700 md:mt-0 md:h-auto md:w-auto md:border md:dark:border-slate-700 md:bg-white md:py-2 md:text-base opacity-80 md:dark:bg-gray-900"
 							>
 								Contact
 							</Link>

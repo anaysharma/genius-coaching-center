@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 function Glance() {
 	return (
-		<div className="relative z-[5] mx-4 -mt-12 flex flex-col items-center justify-between overflow-hidden rounded border bg-white  dark:border-slate-700 dark:bg-gray-800 md:mx-0 xl:mx-20">
+		<div className="relative z-[5] mx-4 -mt-12 flex flex-col items-center justify-between overflow-hidden rounded border bg-white  dark:border-slate-700 dark:bg-gray-800 md:mx-0">
 			<div className="flex min-h-[6rem] w-full bg-slate-100 px-4 py-8 dark:bg-slate-900 sm:items-center md:bg-gray-100 md:py-0 md:px-0 md:pt-0 md:pb-0 md:dark:bg-gray-700">
 				<ul className="justify-left grid w-full gap-4 px-4 md:grid-flow-col md:gap-0 md:px-0">
 					<li className="flex items-center gap-4 border-gray-500 dark:border-slate-400 md:justify-center md:border-r">
@@ -11,7 +11,7 @@ function Glance() {
 							src="/icons/email.svg"
 							width={20}
 							height={20}
-							className="h-5 dark:invert"
+							className="h-5 dark:invert opacity-80"
 							alt=""
 						/>
 						<a
@@ -21,12 +21,12 @@ function Glance() {
 							example@email.com
 						</a>
 					</li>
-					<li className="flex gap-4 border-gray-500 dark:border-slate-400 md:justify-center md:border-r">
+					<li className="flex gap-4 items-center border-gray-500 dark:border-slate-400 md:justify-center md:border-r">
 						<Image
 							width={20}
 							height={20}
 							src="/icons/smartphone.svg"
-							className="h-5 dark:invert"
+							className="h-5 dark:invert opacity-80"
 							alt=""
 						/>
 						<a
@@ -36,12 +36,12 @@ function Glance() {
 							+91-1234-567-890
 						</a>
 					</li>
-					<li className="flex gap-4 md:justify-center">
+					<li className="flex items-center gap-4 md:justify-center">
 						<Image
 							width={20}
 							height={20}
 							src="/icons/whatsapp.svg"
-							className="h-5 dark:invert"
+							className="h-5 dark:invert opacity-80"
 							alt=""
 						/>
 						<p className="opacity-80">+91-0123456789</p>
@@ -61,9 +61,10 @@ function Glance() {
 						Get unmatched mentorship!
 					</h1>
 					<p className="text-center text-lg opacity-90 md:text-left lg:text-xl">
-						get enrolled in the latest batch for instant mentorship and
-						councelling from our industry leading experts in many specialized
-						fields in technology and science or contact us using above links.
+						get enrolled in the latest batch for instant mentorship
+						and councelling from our industry leading experts in
+						many specialized fields in technology and science or
+						contact us using above links.
 					</p>
 					<div className="flex flex-1 items-center">
 						<Link

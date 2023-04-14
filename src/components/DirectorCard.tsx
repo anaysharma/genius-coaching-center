@@ -6,7 +6,7 @@ export default function DirectorCard() {
 			<figure className="overflow-hidden rounded border p-8 dark:border-slate-700 lg:flex lg:p-0">
 				<Image
 					className="mx-auto aspect-square w-40 rounded-full lg:h-full lg:w-80 lg:rounded-none"
-					src="/index.png"
+					src="/director.webp"
 					alt="reviewer image"
 					height={400}
 					width={400}
@@ -22,10 +22,10 @@ export default function DirectorCard() {
 					</blockquote>
 					<figcaption className="font-medium">
 						<div className="px-4 text-sky-500 dark:text-sky-400 lg:px-8">
-							Anay Sharma
+							Himanshu Kushwaha
 						</div>
 						<div className="px-4 text-slate-700 dark:text-slate-500 lg:px-8">
-							Staff Engineer, Fiverr
+							Director, Genius Computer Academy™
 						</div>
 					</figcaption>
 				</div>

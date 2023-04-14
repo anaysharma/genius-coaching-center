@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { client } from '@/client';
-import imageUrlBuilder from '@sanity/image-url';
-import Image from 'next/image';
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { client } from "@/client";
+import imageUrlBuilder from "@sanity/image-url";
+import Image from "next/image";
 
 function Carousel() {
 	const [currentSlide, setCurrentSLide] = useState<number>(0);
@@ -35,14 +35,17 @@ function Carousel() {
 					return (
 						<Image
 							src={url}
-							alt={`image of slide number ${index} of hero carousal`}
+							alt={`slide ${index} of carousal`}
 							key={index}
 							className={`
 								absolute min-h-full min-w-full flex-shrink-0 object-cover transition-opacity duration-1000 ${
-									index === currentSlide ? 'opacity-100' : 'opacity-0'
+									index === currentSlide
+										? "opacity-100"
+										: "opacity-0"
 								}`}
 							height={1080}
 							width={1920}
+							priority
 						/>
 					);
 				})}
@@ -52,9 +55,10 @@ function Carousel() {
 							Building A Better World, One Student At A Time.
 						</h1>
 						<p className="mb-8 text-lg font-normal opacity-80 sm:px-16 lg:text-xl xl:px-48">
-							Here at Genius Computer Academy we focus on education that unlock
-							students to grow by falling in love with technology and
-							innovation. we love to teach, to see you grow!
+							Here at Genius Computer Academy we focus on
+							education that unlock students to grow by falling in
+							love with technology and innovation. we love to
+							teach, to see you grow!
 						</p>
 						<div className="mb-8 flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 lg:mb-16">
 							<Link

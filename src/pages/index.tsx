@@ -15,7 +15,7 @@ function Home() {
 			</Head>
 			<div>
 				<Carousal />
-				<div className="container mx-auto md:px-6" id="home-page-content">
+				<div className="container lg:px-6 2xl:px-20" id="home-page-content">
 					<Glance />
 					<Seperator />
 					<New />
