@@ -14,7 +14,7 @@ function Navbar() {
 				id="nav-bar"
 				className={`fixed z-10 h-16 w-full pl-4 font-rajdhani transition-colors duration-700 dark:text-white/80 md:h-14 md:pl-0 ${
 					scrollPosition
-						? 'bg-white/80 backdrop-blur-sm dark:bg-gray-900/80 border-b dark:border-b-slate-800'
+						? 'bg-white/80 backdrop-blur dark:bg-gray-900/80 border-b dark:border-b-slate-800'
 						: 'bg-transparent backdrop-blur-none border-b-transparent dark:border-b-transparent'
 				}`}
 			>
